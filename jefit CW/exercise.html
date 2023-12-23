@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+/* bavbar */
+        #body-muscle-head{
+            height: auto;
+            width: 70%;
+            margin: auto;
+            text-align: center;
+            font-size: 30px;
+        }
+         
+        #body-muscle-pic{
+            margin: auto;
+            height: auto;
+            width: 75%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 30px 70px;
+            text-align: center;
+            color: rgb(0, 132, 255);
+            font-size: x-large;
+        }
+        .muscle img{
+            border-radius: 50%;
+        }
+
+        #ex-body{
+            height: auto;
+            width:90%;
+            margin: auto;
+        }
+        #ex-head{
+            margin: auto;
+            text-align: center;
+            font-size: larger;
+        }
+        #ex-pic{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            gap: 12px;
+        }
+        #ex-pic>div>div{
+            width:160px;
+            height:110px;
+            /* border:1px solid red; */
+        }
+
+        .ex-ex{
+            width :100%;
+            height:100%;
+
+        } 
+
+        #ex-pic>div{
+            text-align: center;
+        }
+        #ex-pic>div>img{
+            width: 100%;
+        }
+        #ex-pic div+p{
+         color: rgb(0, 98, 255);
+        }
+
+        /* navbar */
+        #footer{
+   background-color: rgb(247,247,247);
+   width: auto ;
+   height: auto;
+   margin-top:3%;
+  
+}
+
+#etc{
+   display: flex;
+   justify-content: space-around;
+}
+#etc>div{
+   display:grid;
+   line-height:200%;
+   font-size: 20px;
+}
+.footbold{
+   font-weight: 700;
+   font-size: larger;
+}
+.light{
+   color: #9ca5aa;
+}
+.light:hover{
+   color:rgb(37, 124, 255);
+}
+#copyright{
+   margin-top:30px ;
+   width: auto;
+   height: auto;
+   margin-bottom:30px ;
+}
+#copyright>div{
+   width:50%;
+   margin: auto;
+   text-align: center;
+   font-size: x-large;
+}
+    </style>
+</head>
+<body>
+    <div id="body-muscle-head">
+       <div>
+        <h1>JEFIT Exercise Database</h1>
+        <h2>Exercises By Muscle Group</h2>
+        <h3>Find exercises that work out the muscle groups you're targeting.</h3>
+       </div>
+    </div>
+    <div id="body-muscle-pic">
+ 
+        <div class="muscle">
+            <img src="https://www.jefit.com/images/bodyparts2/triceps.png">
+            <div><p>Triceps</p></div>
+        </div>
+        <div class="muscle">
+            <img src="https://www.jefit.com/images/bodyparts2/chest.png">
+            <div><p>Chest</p></div>
+        </div>
+        <div class="muscle">
+            <img src="https://www.jefit.com/images/bodyparts2/shoulders.png">
+            <div><p>Shoulders</p></div>
+        </div>
+        <div class="muscle">
+            <img src="https://www.jefit.com/images/bodyparts2/biceps.png">
+            <div><p>Biceps</p></div>
+        </div>
+        <div class="muscle">
+            <img src="https://www.jefit.com/images/bodyparts2/core.png">
+            <div><p>core</p></div>
+        </div>
+        <div class="muscle">
+            <img src="https://www.jefit.com/images/bodyparts2/back.png">
+            <div><p>Back</p></div>
+        </div>
+        <div class="muscle">
+            <img src="https://www.jefit.com/images/bodyparts2/forearms.png">
+            <div><p>Forearm</p></div>
+        </div>
+        <div class="muscle">
+            <img src="https://www.jefit.com/images/bodyparts2/upper_legs.png">
+            <div><p>Upper Legs</p></div>
+        </div>
+        <div class="muscle">
+            <img src="https://www.jefit.com/images/bodyparts2/glutes.png">
+            <div><p>Glutes</p></div>
+        </div>
+        <div class="muscle">
+            <img src="https://www.jefit.com/images/bodyparts2/cardio.png">
+            <div><p>Cardio</p></div>
+        </div>
+        <div class="muscle">
+            <img src="https://www.jefit.com/images/bodyparts2/lower_legs.png">
+            <div><p>Lower Legs</p></div>
+        </div>
+        <div class="muscle">
+            <img src="https://www.jefit.com/images/bodyparts2/all.png">
+            <div><p>All Exercises</p></div>
+        </div>
+
+    </div>
+
+    <div id="ex-body">
+         <div id="ex-head">
+              <h1>Try Something New</h1>
+              <h2>Change up your routine with one of these exercises!</h2>
+         </div>
+         <div id="ex-pic">
+            <div>
+                <div><img class='ex-ex' src="https://www.jefit.com/images/exercises/960_590/3472.jpg"></div>
+                <p>Medicine Ball Overhead Throw</p>
+                 <p>Shoulders, Other</p>
+            </div>
+            <div>
+                <div><img class='ex-ex'src="https://www.jefit.com/images/exercises/960_590/2148.jpg"></div>
+                <p>Upward Facing Bow Pose</p>
+                  <p>Abs, Back, Shoulders</p>  
+            </div>
+            <div>
+                <div><img class='ex-ex' src="https://www.jefit.com/images/exercises/960_590/4432.jpg"></div>
+                <p>Dumbbell Bent-Over Reverse Fly</p>
+                    <p>Shoulders, Other</p>
+            </div>
+            <div>
+               <div> <img  class='ex-ex'src="https://www.jefit.com/images/exercises/960_590/4900.jpg"></div>
+                <p>Bodyweight Step-Up</p>
+                    <p>Legs, Glutes, Lower Legs</p>
+            </div>
+               <div> 
+               <div> <img  class='ex-ex' src="https://www.jefit.com/images/exercises/960_590/1096.jpg"></div>
+                <p>Dumbbell Preacher Curl</p>
+                 <p>Biceps, Forearm, Other</p>
+            </div>
+            <div>
+                <div><img  class='ex-ex'src="https://www.jefit.com/images/exercises/960_590/5236.jpg"></div>
+                <p>Machine Leg Press (Wide Stance)</p>
+                <p>Upper Legs, Other</p>
+            </div>
+            <div>
+               <div><img class='ex-ex' src="https://www.jefit.com/images/exercises/960_590/3708.jpg"></div>
+                <p>Jump Rope</p>
+                <p>Cardio, Upper Legs, Lower Legs</p>
+            </div>
+            <div>
+               <div> <img  class='ex-ex'src="https://www.jefit.com/images/exercises/960_590/464.jpg"></div>
+                <p> Dumbbell Alternating Bicep Curl</p>
+                <p>Biceps, Other</p>
+            </div>
+            <div>
+                <div><img  class='ex-ex'src="https://www.jefit.com/images/exercises/960_590/3768.jpg"></div>
+                <p>Barbell Snatch from Blocks</p>
+                <p>Upper Legs, Back, Shoulders</p>
+            </div>
+            <div>
+                <div><img class='ex-ex'src="https://www.jefit.com/images/exercises/960_590/2544.jpg"></div>
+                <p>Dumbbell Alternating Hammer Curl (Stability Ball)</p>
+                <p>Biceps, Abs, Shoulders</p>
+            </div>
+            <div>
+                <div><img class='ex-ex'src="https://www.jefit.com/images/exercises/960_590/3852.jpg"></div>
+                <p>Band Seated Calf Stretch</p>
+                <p>Lower Legs, Back, Upper Legs</p>
+            </div><div>
+                <div><img class='ex-ex'src="https://www.jefit.com/images/exercises/960_590/636.jpg"></div>
+                <p>Cable Tricep Pushdown (Rope)</p>
+                <p>Triceps, Other</p>
+            </div>
+            <div>
+                <div><img  class='ex-ex'src="https://www.jefit.com/images/exercises/960_590/2932.jpg"></div>
+                <p>Reverse Hyper (Flat Bench)</p>
+                <p>Glutes, Back, Abs</p>
+            </div>
+            <div>
+                <div><img  class='ex-ex'src="https://www.jefit.com/images/exercises/960_590/1728.jpg"></div>
+                <p>Kettlebell One-Arm Para Press</p>
+                <p>Shoulders, Triceps, Other</p>
+            </div>
+            <div>
+                <div><img class='ex-ex'src="https://www.jefit.com/images/exercises/960_590/4112.jpg"></div>
+                <p>Cable Seated Curl</p>
+                <p>Biceps, Other</p>
+            </div><div>
+                <div><img class='ex-ex'src="https://www.jefit.com/images/exercises/960_590/3196.jpg"></div>
+                <p>Medicine Ball One-Arm Overhead Throw</p>
+                <p>Abs, Back, Chest</p>
+            </div><div>
+                <div><img class='ex-ex'src="https://www.jefit.com/images/exercises/960_590/5244.jpg"></div>
+                <p>Machine Reverse T Bar Row</p>
+                <p>Back, Other</p>
+            </div><div>
+                <div><img class='ex-ex'src="https://www.jefit.com/images/exercises/960_590/200.jpg"></div>
+                <p>Smith Machine Shrug</p>
+                <p>Back, Shoulders, Other</p>
+            </div>
+         </div>
+
+    </div>
+
+
+    <div id="footer">
+   
+        <div id="etc">
+          <div>
+           <div class="footbold">Products</div>
+           <div class="light">Elite Membership</div>
+            
+           <div class="light">Coach</div>
+           <div class="light">Coach</div>
+           <div class="light">Signup</div>
+           <div class="light">Login</div>
+           
+          </div>
+          <div>
+            <div class="footbold">Resource</div>
+            <div class="light">Workout Plans</div>
+            <div class="light">Exercises Database</div>
+            <div class="light">Community</div>
+            <div class="light">Help Center</div>
+          </div>
+          <div>
+            <div class="footbold">Legal Press</div>
+            <div class="light">Privacy Policy</div>
+            <div class="light">Terms of Use</div>
+            <div class="light">IP/DMCA Notices</div>
+             
+            <div class="light">Press & Media</div>
+          </div>
+          <div>
+            <div class="footbold">Follow Us</div>
+            <div class="light">Blog</div>
+            <div class="light">Facebook</div>
+            <div class="light">Twitter</div>
+            <div class="light">Instagram</div>
+          </div>
+        </div>
+     
+        <div id="copyright">
+          <div>
+            <div>Copyright © 2010 - 2023 Jefit, Inc.</div>
+            <div>All Rights Reserved.</div>
+          </div>
+        </div>
+    
+      </div>
+</body>
+</html>

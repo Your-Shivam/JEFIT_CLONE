@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>community</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+         * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+        }
+
+        nav {
+            background: #0082e6;
+            height: 85px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        
+        nav img{
+          padding-right:7% ;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            margin:auto;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+            position: relative; /* Added for positioning submenus */
+            text-align: center;
+        }
+
+        nav ul li a {
+            color: white;
+            font-size: 25px;
+            padding: 7px 13px;
+            border-radius: 3px;
+            transition: background 0.5s;
+        }
+
+        a:hover {
+            background: #1b9bff;
+        }
+
+        .checkbtn {
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+            display: none;
+        }
+
+        #check {
+            display: none;
+        }
+
+        .navbar ul li ul {
+            display: none;
+            position: absolute;
+            background-color: #0082e6;
+            width: 100%;
+            top: 100%;  
+            left: 0;  
+        }
+
+        .navbar ul li:hover ul {
+            display: flex;  
+            flex-direction: column;  
+        }
+
+        .navbar ul li ul li {
+            display: flex;  
+            width: 100%; 
+        }
+
+        .navbar ul li ul li a {
+            color: white;
+            font-size: 25px;    
+            padding: 10px;  
+            transition: background 0.5s;
+            width: 100%; 
+            box-sizing: border-box;
+        }
+
+        .navbar ul button{
+          padding: 12px 50px ;
+          border-radius: 12px;
+          border: 2px solid #1b9bff;
+          color: #0082e6;
+          font-weight: 700;
+          font-size: medium;
+
+        } 
+        .navbar ul button:hover{
+          color: white;
+          background-color: rgb(0, 98, 173);
+        }
+
+        @media (max-width: 952px) {
+            label.logo {
+                font-size: 30px;
+            }
+            nav ul li a {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 858px) {
+            .checkbtn {
+                display: block;
+            }
+            ul {
+                flex-direction: column;
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background: #2c3e50;
+                top: 85px; /* Adjusted to align with the navigation bar */
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
+            }
+            nav ul {
+                margin: 0;
+            }
+            nav ul li {
+                margin: 20px 0;
+            }
+            a:hover{
+                background: none;
+                color: #0082e6;
+            }
+            #check:checked ~ ul {
+                left: 0;
+            }
+        }
+
+     
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li:after {
+    content: " \2193";  
+    color: white;
+    margin-left: 5px; 
+}
+
+ 
+.navbar ul li > ul li:after {
+    content: "";  
+    margin-left: 0;  
+}
+
+ 
+.navbar ul li:not(:nth-child(2)):not(:nth-child(3)):not(:nth-child(5)):after {
+    content: "";  
+    margin-left: 0;  
+}
+
+        /* 
+         navbar */
+
+    body{
+     margin: 0px;
+    }
+    main{
+        margin: 3%;
+
+    }
+    #start{
+        text-align: center;
+        font-size: xx-large;
+    } 
+    
+   
+    #para{
+          margin: auto;
+          
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+    #main-body{
+        padding: 0 25%;
+    }
+    #para{
+      padding: 2%;
+      font-size: xx-large;
+    }
+    #para p:hover{
+        color: rgb(0, 119, 255);
+    }
+    #para h1{
+        text-align: center;
+        font-size: 40px;  
+    }
+   
+    #box-s{
+        padding:  20px;
+
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+    #customer-tab{
+        margin: 5% auto;
+        width: 60%;
+        text-align: center;
+        padding:  20px 20px 30px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+    #customer-pic{
+        display: grid;
+        grid-template-columns:repeat(3,1fr);
+        gap: 70px 12px;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    #customer-pic>div{
+        height:  457px;
+        width: 356px;
+    }
+    #customer-pic>div>img{
+        width:100%;
+        height:100%;
+        border-radius:5% ;
+        transition: 0.4s;
+    }
+    #customer-pic>div>img:hover{
+        transform: scale(1.2);
+        z-index: 2;
+    }
+
+    
+#footer{
+   background-color: rgb(247,247,247);
+   width: auto ;
+   height: auto;
+   margin-top:3%;
+  
+}
+
+#etc{
+   display: flex;
+   justify-content: space-around;
+}
+#etc>div{
+   display:grid;
+   line-height:200%;
+   font-size: 20px;
+}
+.footbold{
+   font-weight: 700;
+   font-size: larger;
+}
+.light{
+   color: #9ca5aa;
+}
+.light:hover{
+   color:rgb(37, 124, 255);
+}
+#copyright{
+   margin-top:30px ;
+   width: auto;
+   height: auto;
+   margin-bottom:30px ;
+}
+#copyright>div{
+   width:50%;
+   margin: auto;
+   text-align: center;
+   font-size: x-large;
+}
+
+
+
+
+   </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <input type="checkbox" id="check" class="checkbtn">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+          <li><img src="https://www.jefit.com/wp/wp-content/uploads/2017/07/cropped-logo_155_40_white.png"></li>
+            <li><a class="active" href="#">Get App</a>
+                <ul>
+                    <li><a href="#">Workout App(ios)</a></li>
+                    <li><a href="#">Workout App(Android)</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Workout plans</a>
+                <ul>
+                    <li><a href="#">Pro-designed Plans</a></li>
+                    <li><a href="#">Create My Plan</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Exercises</a></li>
+            <li><a href="#">Community</a>
+                <ul>
+                    <li><a href="#">Jetfit community</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Coach</a></li>
+            <li><a href="#">Elite</a></li>
+            <li><a href="#">Login</a></li>
+            <button>Sign Up</button>
+        </ul>
+    </nav>
+
+    <div id="start">
+        <h1>Jefit Community Members</h1>
+        <p>Check out some of the latest posts from the community and stay strong together!</p>
+    </div>
+    <div id="main-body">
+    <div id="para">
+        <h1>Question and Answers from the Jefit Community</h1>
+        <p>How do you stay motivated? for me i keep my goals realistic. i remind myself why i workout. now with the<br></p>
+        <p>Anyone know why jetfit doesn't use body weight to calculate total workload during pull-ups and chin-ups rather than adding a<br></p>
+        <p>The subject only dreaded more than cardio, abs/core workouts. do you guys like to mix in a few exercises</p>
+        <p>So if you're doing cable flies, so you record the weight on one side or the weight on both sides<br></p>
+        <p>How much sleep should a person get when you're active in the gym lots?<br></p>
+        <p>Does anyone have any tips for my glute workout? how much i try, my back is killing me. im feeling insecure</p>      
+        <p>What are some good core exercises i can do besides sit-up . i’m 10 weeks postpartum my core is not<br></p>
+        <p>Anyone havin trouble with the new iron points system? i have points but can’t redeem any of them? also i’ve<br></p>
+        <p>What is your favorite ab exercise for progressive overload?<br></p>
+        <p>Does anyone have any recommendation for protein snacks<br></p>
+        <p>Hi experts. need advice where to start at the age of 53 to reduce belly fat. gain muscle and not to<br></p>
+        <p>I do all of my exercises with dumbbells and my question is related to logging my sets should i be logging<br></p>
+        <p>Everyone tell me to get off my lazy ass and get to my gym (home gym so it's just down)<br></p>
+        <p>Only men know the main problem with doing heavy shrugs 🤣</p>
+        <p>When going for a pr or general sets, yall record the warmup sets as part of the workout or just<br></p>
+    </div>
+</div >
+    <div id="customer-tab">
+        <h1>Jefit Members Stories</h1>
+        <div id="customer-pic">
+          <div>  
+            <img src="https://www.jefit.com/forum/attachment.php?attachmentid=950474">
+            <div><a src="https://www.jefit.com/user/Celina.Aiyana">Celina.Aiyana</a></div>     
+         </div>
+          <div>
+            <img src="https://www.jefit.com/forum/attachment.php?attachmentid=951059">
+            <div><a src="https://www.jefit.com/user/LizLifts24">LizLifts24</a></div> 
+         </div>
+           <div>
+            <img src="https://www.jefit.com/forum/attachment.php?attachmentid=950896">
+            <div><a src="https://www.jefit.com/user/fitz.blitz">fitz.blitz</a></div> 
+         </div>
+           <div>
+            <img src="https://www.jefit.com/forum/attachment.php?attachmentid=951474">
+            <div><a src="https://www.jefit.com/user/JSadd87">JSadd87</a></div> 
+         </div>
+         
+           <div><img src="https://www.jefit.com/forum/attachment.php?attachmentid=951659">
+            <div><a src="https://www.jefit.com/user/LostNatureGirl">LostNatureGirl</a></div>  
+         </div>
+          <div>
+            <img src="https://www.jefit.com/forum/attachment.php?attachmentid=951637">
+            <div><a src="https://www.jefit.com/user/fitz.blitz">fitz.blitz</a></div> 
+         </div>
+         <div>
+            <img src="https://www.jefit.com/forum/attachment.php?attachmentid=952041">
+            <div><a src="https://www.jefit.com/user/LizLifts24">LizLifts24</a></div>   
+         </div>
+         <div>
+            <img src="https://www.jefit.com/forum/attachment.php?attachmentid=952066">
+          <div><a src="https://www.jefit.com/user/LadyInTheArena">LadyInTheArena</a></div> 
+         </div>
+         <div><img src="https://www.jefit.com/forum/attachment.php?attachmentid=952316">
+            <div><a src="https://www.jefit.com/user/LostNatureGirl">LostNatureGirl</a></div>  
+         </div>
+         <div>
+            <img src="https://www.jefit.com/forum/attachment.php?attachmentid=952306">
+          <div><a src="https://www.jefit.com/user/Mighty.Mell0">Mighty.Mell0</a></div> 
+         </div>
+         <div>
+            <img src="https://www.jefit.com/forum/attachment.php?attachmentid=952701">
+          <div><a src="https://www.jefit.com/user/breezy1149">breezy1149</a></div> 
+         </div>
+         <div>
+            <img src="https://www.jefit.com/forum/attachment.php?attachmentid=951209">
+            <div><a src="https://www.jefit.com/user/JSadd87">JSadd87</a></div> 
+         </div>
+        </div>
+     </div>
+
+     <div id="footer">
+   
+        <div id="etc">
+          <div>
+           <div class="footbold">Products</div>
+           <div class="light">Elite Membership</div>
+            
+           <div class="light">Coach</div>
+           <div class="light">Coach</div>
+           <div class="light">Signup</div>
+           <div class="light">Login</div>
+           
+          </div>
+          <div>
+            <div class="footbold">Resource</div>
+            <div class="light">Workout Plans</div>
+            <div class="light">Exercises Database</div>
+            <div class="light">Community</div>
+            <div class="light">Help Center</div>
+          </div>
+          <div>
+            <div class="footbold">Legal Press</div>
+            <div class="light">Privacy Policy</div>
+            <div class="light">Terms of Use</div>
+            <div class="light">IP/DMCA Notices</div>
+             
+            <div class="light">Press & Media</div>
+          </div>
+          <div>
+            <div class="footbold">Follow Us</div>
+            <div class="light">Blog</div>
+            <div class="light">Facebook</div>
+            <div class="light">Twitter</div>
+            <div class="light">Instagram</div>
+          </div>
+        </div>
+     
+        <div id="copyright">
+          <div>
+            <div>Copyright © 2010 - 2023 Jefit, Inc.</div>
+            <div>All Rights Reserved.</div>
+          </div>
+        </div>
+    
+      </div>
+
+</body>
+</html>

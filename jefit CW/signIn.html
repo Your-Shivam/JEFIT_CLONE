@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        background-image: url("https://www.jefit.com/images/loginbg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: Poppins, DM-Sans, sans-serif; /* Default font family */
+        /* color: aliceblue; */
+      }
+     #logo{
+         text-align: center;
+         color: white;
+
+     }
+    #logPg{
+         text-align: center;
+         border: 1px solid blue;
+         height:auto;
+         width:90%;
+         max-width: 500px;
+         margin:10% auto;
+         border-radius: 10px;
+         background-color: rgb(235, 247, 255);
+         padding: 20px ;
+         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    #logPg>div>h1{
+      font-size:70px; 
+    }
+
+    .inp{
+      padding: 3%;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 15px;
+      border: none;
+    }
+
+     .nm{
+       font-size: 22px;
+       display: flex;
+        justify-content: flex-start;
+        margin-left:10%;
+        /* margin-top:3% ;
+        margin-bottom: 15; */
+        line-height: 50px;
+
+     }
+     #nm2{
+      font-size: 22px;
+
+      /* margin-left: -470px; */
+      /* margin-top:6% ;
+        margin-bottom: 6%; */
+        line-height: 50px;
+     }
+      
+     #btn{
+      padding: 2.1%;
+      border-radius: 40px;
+      width: 85%;
+      margin-top: 20px;
+      background-color: #2b83c8;
+      color: white;
+      font-weight: 900;
+      font-size: large;
+      border: none;
+     }
+       
+     #otlog{
+      display: flex;
+      justify-content:space-around;
+     }
+     
+     #otlog>div{
+      height: 70px;
+      width: 70px;
+      /* border: 1px solid blue; */
+     
+     
+     }
+     #otlog>div>img{
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     }
+     .font{
+      font-size: x-large;
+     }
+     
+     .class{
+      display: flex;
+      justify-content: flex-start;
+     }
+
+
+     @media (min-width: 768px) { 
+    #logPg {
+        margin: 10% auto;  
+    }
+
+    .inp {
+        width: 80%;  
+    }
+}
+
+@media (min-width: 1024px) {  
+    #logPg {
+        margin: 5% auto; 
+    }
+
+    .inp {
+        width: 70%; 
+    }
+}
+    </style>
+</head>
+<body>
+    <div id="logo">
+       <h1>JEFIT</h1>
+    </div>
+  <div id="logPg">
+   <div><h1>LOG IN</h1></div>
+    
+   <div id="inputs">
+    <div class="nm"><label>Username or Email</label><br></div>
+    <input class="inp" placeholder="Username or Email" type="text"><br>
+    <div class="nm"><lable>Password</lable><br></div>
+    <input class="inp" placeholder="Password" type="password"><br>
+   </div>
+   
+   <div>
+    <button id="btn" >LOG IN</button>
+   </div>
+  
+   <div>
+     <p class="font">Or continue with</p>
+
+     <div id="otlog"> 
+         <div><img src="https://www.jefit.com/images/rg_google.svg" alt="google"></div>
+         <div><img src="https://www.jefit.com/images/rg_fb.svg" alt=" "></div>
+         <div><img src="https://www.jefit.com/images/rg_apple.svg" alt=""></div>
+     </div>
+      
+   </div>
+   <div>
+    <p class="font">New to JEFIT? <span><a href="./signUp.html" style="color: #2b83c8;">Create an account</a></span></p>
+   </div>
+
+  </div>
+ 
+
+     
+    
+</body>
+</html>
+<script src="./signIn.js"></script>

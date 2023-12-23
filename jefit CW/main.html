@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <input type="checkbox" id="check" class="checkbtn">
+      <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><img src="https://www.jefit.com/wp/wp-content/uploads/2017/07/cropped-logo_155_40_white.png"></li>
+          <li><a class="active" href="#">Get App</a>
+              <ul>
+                  <li><a href="https://apps.apple.com/us/app/jefit-workout-planner-gym-log/id449810000">Workout App(ios)</a></li>
+                  <li><a href="https://play.google.com/store/apps/details?id=je.fit">Workout App<br>(Android)</a></li>
+              </ul>
+          </li>
+          <li><a href="#">Workout plans</a>
+              <ul>
+                  <li><a href="https://apps.apple.com/us/app/jefit-workout-planner-gym-log/id449810000">Pro-designed Plans</a></li>
+                  <li><a href="https://www.jefit.com/build-routine/">Create My Plan</a></li>
+              </ul>
+          </li>
+          <li><a href="./exercise.html">Exercises</a></li>
+          <li><a href="./community.html">Community</a>
+              <ul>
+                  <li><a href="./community.html">Jetfit community</a></li>
+                  <li><a href="https://www.jefit.com/blog">Blog</a></li>
+              </ul>
+          </li>
+          <li><a href="https://www.jefit.com/coach">Coach</a></li>
+          <li><a href="https://www.jefit.com/elite/">Elite</a></li>
+          <li><a href="./signIn.html">Login</a></li>
+          <button id="signup">Sign Up</button>
+      </ul>
+  </nav>
+
+    <div id="bghome">
+      <div id="bgparent">
+        <div id="child1">
+          <div id="topic">
+            <h1>
+              Manage and Track<br />
+              All Your Workouts
+            </h1>
+          </div>
+          <div id="ptag">
+            <p>
+              #1 Gym workout tracking app. Progress tracked, workouts
+              personalized - Your all-in-one fitness solution
+            </p>
+          </div>
+          <div id="download">
+            <div id="play">
+              <div>
+                <img
+                  src="https://www.jefit.com/wp/wp-content/uploads/2021/11/googleplay.png"
+                />
+              </div>
+              <div>
+                <img
+                  src="https://www.jefit.com/wp/wp-content/uploads/2021/11/appstore.png"
+                />
+              </div>
+            </div>
+
+            <div>
+              <img
+                src="https://www.jefit.com/wp/wp-content/uploads/2021/11/qrcode_white.png"
+              />
+            </div>
+          </div>
+          <div id="social_link">
+            <div>
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCA0OCA0OCIKc3R5bGU9ImZpbGw6I0ZGRkZGRjsiPgo8cGF0aCBkPSJNIDE2LjUgNSBDIDEwLjE2NjM5IDUgNSAxMC4xNjYzOSA1IDE2LjUgTCA1IDMxLjUgQyA1IDM3LjgzMjc1NyAxMC4xNjYyMDkgNDMgMTYuNSA0MyBMIDMxLjUgNDMgQyAzNy44MzI5MzggNDMgNDMgMzcuODMyOTM4IDQzIDMxLjUgTCA0MyAxNi41IEMgNDMgMTAuMTY2MjA5IDM3LjgzMjc1NyA1IDMxLjUgNSBMIDE2LjUgNSB6IE0gMTYuNSA4IEwgMzEuNSA4IEMgMzYuMjExMjQzIDggNDAgMTEuNzg3NzkxIDQwIDE2LjUgTCA0MCAzMS41IEMgNDAgMzYuMjExMDYyIDM2LjIxMTA2MiA0MCAzMS41IDQwIEwgMTYuNSA0MCBDIDExLjc4Nzc5MSA0MCA4IDM2LjIxMTI0MyA4IDMxLjUgTCA4IDE2LjUgQyA4IDExLjc4NzYxIDExLjc4NzYxIDggMTYuNSA4IHogTSAzNCAxMiBDIDMyLjg5NSAxMiAzMiAxMi44OTUgMzIgMTQgQyAzMiAxNS4xMDUgMzIuODk1IDE2IDM0IDE2IEMgMzUuMTA1IDE2IDM2IDE1LjEwNSAzNiAxNCBDIDM2IDEyLjg5NSAzNS4xMDUgMTIgMzQgMTIgeiBNIDI0IDE0IEMgMTguNDk1MTc4IDE0IDE0IDE4LjQ5NTE3OCAxNCAyNCBDIDE0IDI5LjUwNDgyMiAxOC40OTUxNzggMzQgMjQgMzQgQyAyOS41MDQ4MjIgMzQgMzQgMjkuNTA0ODIyIDM0IDI0IEMgMzQgMTguNDk1MTc4IDI5LjUwNDgyMiAxNCAyNCAxNCB6IE0gMjQgMTcgQyAyNy44ODMxNzggMTcgMzEgMjAuMTE2ODIyIDMxIDI0IEMgMzEgMjcuODgzMTc4IDI3Ljg4MzE3OCAzMSAyNCAzMSBDIDIwLjExNjgyMiAzMSAxNyAyNy44ODMxNzggMTcgMjQgQyAxNyAyMC4xMTY4MjIgMjAuMTE2ODIyIDE3IDI0IDE3IHoiPjwvcGF0aD4KPC9zdmc+"
+              />
+            </div>
+            <div>
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjgiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAzMCAzMCIKc3R5bGU9ImZpbGw6I0ZGRkZGRjsiPgogICAgPHBhdGggZD0iTTE1LDNDOC4zNzMsMywzLDguMzczLDMsMTVjMCw2LjAxNiw0LjQzMiwxMC45ODQsMTAuMjA2LDExLjg1MlYxOC4xOGgtMi45Njl2LTMuMTU0aDIuOTY5di0yLjA5OWMwLTMuNDc1LDEuNjkzLTUsNC41ODEtNSBjMS4zODMsMCwyLjExNSwwLjEwMywyLjQ2MSwwLjE0OXYyLjc1M2gtMS45N2MtMS4yMjYsMC0xLjY1NCwxLjE2My0xLjY1NCwyLjQ3M3YxLjcyNGgzLjU5M0wxOS43MywxOC4xOGgtMy4xMDZ2OC42OTcgQzIyLjQ4MSwyNi4wODMsMjcsMjEuMDc1LDI3LDE1QzI3LDguMzczLDIxLjYyNywzLDE1LDN6Ij48L3BhdGg+Cjwvc3ZnPg=="
+              />
+            </div>
+            <div>
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIKc3R5bGU9ImZpbGw6I0ZGRkZGRjsiPgogICAgPHBhdGggZD0iTTI4LDYuOTM3Yy0wLjk1NywwLjQyNS0xLjk4NSwwLjcxMS0zLjA2NCwwLjg0YzEuMTAyLTAuNjYsMS45NDctMS43MDUsMi4zNDUtMi45NTFjLTEuMDMsMC42MTEtMi4xNzIsMS4wNTUtMy4zODgsMS4yOTUgYy0wLjk3My0xLjAzNy0yLjM1OS0xLjY4NS0zLjg5My0xLjY4NWMtMi45NDYsMC01LjMzNCwyLjM4OS01LjMzNCw1LjMzNGMwLDAuNDE4LDAuMDQ4LDAuODI2LDAuMTM4LDEuMjE1IGMtNC40MzMtMC4yMjItOC4zNjMtMi4zNDYtMTAuOTk1LTUuNTc0QzMuMzUxLDYuMTk5LDMuMDg4LDcuMTE1LDMuMDg4LDguMDk0YzAsMS44NSwwLjk0MSwzLjQ4MywyLjM3Miw0LjQzOSBjLTAuODc0LTAuMDI4LTEuNjk3LTAuMjY4LTIuNDE2LTAuNjY3YzAsMC4wMjMsMCwwLjA0NCwwLDAuMDY3YzAsMi41ODUsMS44MzgsNC43NDEsNC4yNzksNS4yMyBjLTAuNDQ3LDAuMTIyLTAuOTE5LDAuMTg3LTEuNDA2LDAuMTg3Yy0wLjM0MywwLTAuNjc4LTAuMDM0LTEuMDAzLTAuMDk1YzAuNjc5LDIuMTE5LDIuNjQ5LDMuNjYyLDQuOTgzLDMuNzA1IGMtMS44MjUsMS40MzEtNC4xMjUsMi4yODQtNi42MjUsMi4yODRjLTAuNDMsMC0wLjg1NS0wLjAyNS0xLjI3My0wLjA3NWMyLjM2MSwxLjUxMyw1LjE2NCwyLjM5Niw4LjE3NywyLjM5NiBjOS44MTIsMCwxNS4xNzYtOC4xMjgsMTUuMTc2LTE1LjE3N2MwLTAuMjMxLTAuMDA1LTAuNDYxLTAuMDE1LTAuNjlDMjYuMzgsOC45NDUsMjcuMjg1LDguMDA2LDI4LDYuOTM3eiI+PC9wYXRoPgo8L3N2Zz4="
+              />
+            </div>
+          </div>
+        </div>
+
+        <div id="child2">
+          <div>
+            <img
+              src="https://www.jefit.com/wp/wp-content/uploads/2023/10/device.png"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- /body -->
+
+    <div id="parent2">
+      <div>
+        <h1>CONNECT WITH OVER 12 MILLION JEFIT MEMBERS</h1>
+      </div>
+
+      <div id="achive">
+        <p>
+          As the most active workout community, we invite you and your friends
+          to join us and support each other.
+        </p>
+      </div>
+
+      <div class="achive_photo" id="picContainer"></div>
+
+      <div id="content-button">
+        <div><button class="sigupall">TRENDING TOPICS</button></div>
+        <div><button class="sigupall">JOIN NOW</button></div>
+      </div>
+    </div>
+    <!--  making tabs -->
+
+    <div id="table_h"><h1>JEFIT COVERS ALL OF YOUR WORKOUT NEEDS</h1></div>
+
+    <!-- table -->
+
+    <div class="pannel">
+      <div class="andrpic">
+        <div>
+          <img
+            src="https://www.jefit.com/wp/wp-content/uploads/2022/08/web1.png"
+          />
+        </div>
+      </div>
+      <div class="andrh1">
+        <div><p>WORKOUT TRACKING</p></div>
+        <div>
+          <h1>PERSONALIZE YOUR <br />WORKOUT PLANS</h1>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <span>
+                <img
+                  alt="svgImg"
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxjaXJjbGUgY3g9IjI0IiBjeT0iMjQiIHI9IjIwIiBmaWxsPSIjNGRkMGUxIj48L2NpcmNsZT48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjIuNDkxLDMwLjY5Yy0wLjU3NiwwLTEuMTUyLTAuMjItMS41OTEtMC42NTlsLTYuMDgzLTYuMDg0Yy0wLjg3OS0wLjg3OC0wLjg3OS0yLjMwMywwLTMuMTgyIGMwLjg3OC0wLjg3OSwyLjMwNC0wLjg3OSwzLjE4MiwwbDYuMDgzLDYuMDg0YzAuODc5LDAuODc4LDAuODc5LDIuMzAzLDAsMy4xODJDMjMuNjQzLDMwLjQ3LDIzLjA2NywzMC42OSwyMi40OTEsMzAuNjl6Ij48L3BhdGg+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIyLjQ5MSwzMC42OWMtMC41NzYsMC0xLjE1Mi0wLjIyLTEuNTkxLTAuNjU5Yy0wLjg3OS0wLjg3OC0wLjg3OS0yLjMwMywwLTMuMTgybDkuNTM5LTkuNTM5IGMwLjg3OC0wLjg3OSwyLjMwNC0wLjg3OSwzLjE4MiwwYzAuODc5LDAuODc4LDAuODc5LDIuMzAzLDAsMy4xODJsLTkuNTM5LDkuNTM5QzIzLjY0MywzMC40NywyMy4wNjcsMzAuNjksMjIuNDkxLDMwLjY5eiI+PC9wYXRoPgo8L3N2Zz4=" /></span
+              >1400+ exercises with instructions
+            </li>
+            <li>
+              <span
+                ><img
+                  alt="svgImg"
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxjaXJjbGUgY3g9IjI0IiBjeT0iMjQiIHI9IjIwIiBmaWxsPSIjNGRkMGUxIj48L2NpcmNsZT48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjIuNDkxLDMwLjY5Yy0wLjU3NiwwLTEuMTUyLTAuMjItMS41OTEtMC42NTlsLTYuMDgzLTYuMDg0Yy0wLjg3OS0wLjg3OC0wLjg3OS0yLjMwMywwLTMuMTgyIGMwLjg3OC0wLjg3OSwyLjMwNC0wLjg3OSwzLjE4MiwwbDYuMDgzLDYuMDg0YzAuODc5LDAuODc4LDAuODc5LDIuMzAzLDAsMy4xODJDMjMuNjQzLDMwLjQ3LDIzLjA2NywzMC42OSwyMi40OTEsMzAuNjl6Ij48L3BhdGg+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIyLjQ5MSwzMC42OWMtMC41NzYsMC0xLjE1Mi0wLjIyLTEuNTkxLTAuNjU5Yy0wLjg3OS0wLjg3OC0wLjg3OS0yLjMwMywwLTMuMTgybDkuNTM5LTkuNTM5IGMwLjg3OC0wLjg3OSwyLjMwNC0wLjg3OSwzLjE4MiwwYzAuODc5LDAuODc4LDAuODc5LDIuMzAzLDAsMy4xODJsLTkuNTM5LDkuNTM5QzIzLjY0MywzMC40NywyMy4wNjcsMzAuNjksMjIuNDkxLDMwLjY5eiI+PC9wYXRoPgo8L3N2Zz4=" /></span
+              >Pro-designed workout plans
+            </li>
+            <li>
+              <span
+                ><img
+                  alt="svgImg"
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxjaXJjbGUgY3g9IjI0IiBjeT0iMjQiIHI9IjIwIiBmaWxsPSIjNGRkMGUxIj48L2NpcmNsZT48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjIuNDkxLDMwLjY5Yy0wLjU3NiwwLTEuMTUyLTAuMjItMS41OTEtMC42NTlsLTYuMDgzLTYuMDg0Yy0wLjg3OS0wLjg3OC0wLjg3OS0yLjMwMywwLTMuMTgyIGMwLjg3OC0wLjg3OSwyLjMwNC0wLjg3OSwzLjE4MiwwbDYuMDgzLDYuMDg0YzAuODc5LDAuODc4LDAuODc5LDIuMzAzLDAsMy4xODJDMjMuNjQzLDMwLjQ3LDIzLjA2NywzMC42OSwyMi40OTEsMzAuNjl6Ij48L3BhdGg+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIyLjQ5MSwzMC42OWMtMC41NzYsMC0xLjE1Mi0wLjIyLTEuNTkxLTAuNjU5Yy0wLjg3OS0wLjg3OC0wLjg3OS0yLjMwMywwLTMuMTgybDkuNTM5LTkuNTM5IGMwLjg3OC0wLjg3OSwyLjMwNC0wLjg3OSwzLjE4MiwwYzAuODc5LDAuODc4LDAuODc5LDIuMzAzLDAsMy4xODJsLTkuNTM5LDkuNTM5QzIzLjY0MywzMC40NywyMy4wNjcsMzAuNjksMjIuNDkxLDMwLjY5eiI+PC9wYXRoPgo8L3N2Zz4=" /></span
+              >Support custom exercises
+            </li>
+            <li>
+              <span
+                ><img
+                  alt="svgImg"
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxjaXJjbGUgY3g9IjI0IiBjeT0iMjQiIHI9IjIwIiBmaWxsPSIjNGRkMGUxIj48L2NpcmNsZT48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjIuNDkxLDMwLjY5Yy0wLjU3NiwwLTEuMTUyLTAuMjItMS41OTEtMC42NTlsLTYuMDgzLTYuMDg0Yy0wLjg3OS0wLjg3OC0wLjg3OS0yLjMwMywwLTMuMTgyIGMwLjg3OC0wLjg3OSwyLjMwNC0wLjg3OSwzLjE4MiwwbDYuMDgzLDYuMDg0YzAuODc5LDAuODc4LDAuODc5LDIuMzAzLDAsMy4xODJDMjMuNjQzLDMwLjQ3LDIzLjA2NywzMC42OSwyMi40OTEsMzAuNjl6Ij48L3BhdGg+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIyLjQ5MSwzMC42OWMtMC41NzYsMC0xLjE1Mi0wLjIyLTEuNTkxLTAuNjU5Yy0wLjg3OS0wLjg3OC0wLjg3OS0yLjMwMywwLTMuMTgybDkuNTM5LTkuNTM5IGMwLjg3OC0wLjg3OSwyLjMwNC0wLjg3OSwzLjE4MiwwYzAuODc5LDAuODc4LDAuODc5LDIuMzAzLDAsMy4xODJsLTkuNTM5LDkuNTM5QzIzLjY0MywzMC40NywyMy4wNjcsMzAuNjksMjIuNDkxLDMwLjY5eiI+PC9wYXRoPgo8L3N2Zz4=" /></span
+              >Flexible workout planning tool
+            </li>
+          </ul>
+        </div>
+        <div><button class="sigupall">JOIN NOW</button></div>
+      </div>
+    </div>
+
+    <div class="pannel">
+      <div class="andrh1">
+        <div><p>SMART WATCH INTEGRATION</p></div>
+        <div>
+          <h1>
+            TRAIN & LOG<br />
+            SEAMLESSLY IN GYM<br />
+            AND HOME
+          </h1>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <span>
+                <img
+                  alt="svgImg"
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxjaXJjbGUgY3g9IjI0IiBjeT0iMjQiIHI9IjIwIiBmaWxsPSIjNGRkMGUxIj48L2NpcmNsZT48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjIuNDkxLDMwLjY5Yy0wLjU3NiwwLTEuMTUyLTAuMjItMS41OTEtMC42NTlsLTYuMDgzLTYuMDg0Yy0wLjg3OS0wLjg3OC0wLjg3OS0yLjMwMywwLTMuMTgyIGMwLjg3OC0wLjg3OSwyLjMwNC0wLjg3OSwzLjE4MiwwbDYuMDgzLDYuMDg0YzAuODc5LDAuODc4LDAuODc5LDIuMzAzLDAsMy4xODJDMjMuNjQzLDMwLjQ3LDIzLjA2NywzMC42OSwyMi40OTEsMzAuNjl6Ij48L3BhdGg+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIyLjQ5MSwzMC42OWMtMC41NzYsMC0xLjE1Mi0wLjIyLTEuNTkxLTAuNjU5Yy0wLjg3OS0wLjg3OC0wLjg3OS0yLjMwMywwLTMuMTgybDkuNTM5LTkuNTM5IGMwLjg3OC0wLjg3OSwyLjMwNC0wLjg3OSwzLjE4MiwwYzAuODc5LDAuODc4LDAuODc5LDIuMzAzLDAsMy4xODJsLTkuNTM5LDkuNTM5QzIzLjY0MywzMC40NywyMy4wNjcsMzAuNjksMjIuNDkxLDMwLjY5eiI+PC9wYXRoPgo8L3N2Zz4=" /></span
+              >Log training with one-click
+            </li>
+            <li>
+              <span
+                ><img
+                  alt="svgImg"
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxjaXJjbGUgY3g9IjI0IiBjeT0iMjQiIHI9IjIwIiBmaWxsPSIjNGRkMGUxIj48L2NpcmNsZT48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjIuNDkxLDMwLjY5Yy0wLjU3NiwwLTEuMTUyLTAuMjItMS41OTEtMC42NTlsLTYuMDgzLTYuMDg0Yy0wLjg3OS0wLjg3OC0wLjg3OS0yLjMwMywwLTMuMTgyIGMwLjg3OC0wLjg3OSwyLjMwNC0wLjg3OSwzLjE4MiwwbDYuMDgzLDYuMDg0YzAuODc5LDAuODc4LDAuODc5LDIuMzAzLDAsMy4xODJDMjMuNjQzLDMwLjQ3LDIzLjA2NywzMC42OSwyMi40OTEsMzAuNjl6Ij48L3BhdGg+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIyLjQ5MSwzMC42OWMtMC41NzYsMC0xLjE1Mi0wLjIyLTEuNTkxLTAuNjU5Yy0wLjg3OS0wLjg3OC0wLjg3OS0yLjMwMywwLTMuMTgybDkuNTM5LTkuNTM5IGMwLjg3OC0wLjg3OSwyLjMwNC0wLjg3OSwzLjE4MiwwYzAuODc5LDAuODc4LDAuODc5LDIuMzAzLDAsMy4xODJsLTkuNTM5LDkuNTM5QzIzLjY0MywzMC40NywyMy4wNjcsMzAuNjksMjIuNDkxLDMwLjY5eiI+PC9wYXRoPgo8L3N2Zz4="
+              /></span>
+              Control rest time easily
+            </li>
+            <li>
+              <span
+                ><img
+                  alt="svgImg"
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxjaXJjbGUgY3g9IjI0IiBjeT0iMjQiIHI9IjIwIiBmaWxsPSIjNGRkMGUxIj48L2NpcmNsZT48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjIuNDkxLDMwLjY5Yy0wLjU3NiwwLTEuMTUyLTAuMjItMS41OTEtMC42NTlsLTYuMDgzLTYuMDg0Yy0wLjg3OS0wLjg3OC0wLjg3OS0yLjMwMywwLTMuMTgyIGMwLjg3OC0wLjg3OSwyLjMwNC0wLjg3OSwzLjE4MiwwbDYuMDgzLDYuMDg0YzAuODc5LDAuODc4LDAuODc5LDIuMzAzLDAsMy4xODJDMjMuNjQzLDMwLjQ3LDIzLjA2NywzMC42OSwyMi40OTEsMzAuNjl6Ij48L3BhdGg+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIyLjQ5MSwzMC42OWMtMC41NzYsMC0xLjE1Mi0wLjIyLTEuNTkxLTAuNjU5Yy0wLjg3OS0wLjg3OC0wLjg3OS0yLjMwMywwLTMuMTgybDkuNTM5LTkuNTM5IGMwLjg3OC0wLjg3OSwyLjMwNC0wLjg3OSwzLjE4MiwwYzAuODc5LDAuODc4LDAuODc5LDIuMzAzLDAsMy4xODJsLTkuNTM5LDkuNTM5QzIzLjY0MywzMC40NywyMy4wNjcsMzAuNjksMjIuNDkxLDMwLjY5eiI+PC9wYXRoPgo8L3N2Zz4=" /></span
+              >Available on mobile and watch
+            </li>
+            <li>
+              <span
+                ><img
+                  alt="svgImg"
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxjaXJjbGUgY3g9IjI0IiBjeT0iMjQiIHI9IjIwIiBmaWxsPSIjNGRkMGUxIj48L2NpcmNsZT48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjIuNDkxLDMwLjY5Yy0wLjU3NiwwLTEuMTUyLTAuMjItMS41OTEtMC42NTlsLTYuMDgzLTYuMDg0Yy0wLjg3OS0wLjg3OC0wLjg3OS0yLjMwMywwLTMuMTgyIGMwLjg3OC0wLjg3OSwyLjMwNC0wLjg3OSwzLjE4MiwwbDYuMDgzLDYuMDg0YzAuODc5LDAuODc4LDAuODc5LDIuMzAzLDAsMy4xODJDMjMuNjQzLDMwLjQ3LDIzLjA2NywzMC42OSwyMi40OTEsMzAuNjl6Ij48L3BhdGg+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIyLjQ5MSwzMC42OWMtMC41NzYsMC0xLjE1Mi0wLjIyLTEuNTkxLTAuNjU5Yy0wLjg3OS0wLjg3OC0wLjg3OS0yLjMwMywwLTMuMTgybDkuNTM5LTkuNTM5IGMwLjg3OC0wLjg3OSwyLjMwNC0wLjg3OSwzLjE4MiwwYzAuODc5LDAuODc4LDAuODc5LDIuMzAzLDAsMy4xODJsLTkuNTM5LDkuNTM5QzIzLjY0MywzMC40NywyMy4wNjcsMzAuNjksMjIuNDkxLDMwLjY5eiI+PC9wYXRoPgo8L3N2Zz4=" /></span
+              >Audio and video instructions
+            </li>
+          </ul>
+        </div>
+        <div><button class="sigupall">JOIN NOW</button></div>
+      </div>
+      <div id="id" class="andrpic">
+        <div>
+          <img
+            src="https://www.jefit.com/wp/wp-content/uploads/2022/08/web2.png"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="pannel">
+      <div class="andrpic">
+        <div>
+          <img
+            src="https://www.jefit.com/wp/wp-content/uploads/2022/08/web1.png"
+          />
+        </div>
+      </div>
+      <div class="andrh1">
+        <div><p>PROGRESS TRACKING</p></div>
+        <div>
+          <h1>
+            VIEW PROGRESS & <br />
+            REACH NEW LIMITS
+          </h1>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <span>
+                <img
+                  alt="svgImg"
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxjaXJjbGUgY3g9IjI0IiBjeT0iMjQiIHI9IjIwIiBmaWxsPSIjNGRkMGUxIj48L2NpcmNsZT48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjIuNDkxLDMwLjY5Yy0wLjU3NiwwLTEuMTUyLTAuMjItMS41OTEtMC42NTlsLTYuMDgzLTYuMDg0Yy0wLjg3OS0wLjg3OC0wLjg3OS0yLjMwMywwLTMuMTgyIGMwLjg3OC0wLjg3OSwyLjMwNC0wLjg3OSwzLjE4MiwwbDYuMDgzLDYuMDg0YzAuODc5LDAuODc4LDAuODc5LDIuMzAzLDAsMy4xODJDMjMuNjQzLDMwLjQ3LDIzLjA2NywzMC42OSwyMi40OTEsMzAuNjl6Ij48L3BhdGg+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIyLjQ5MSwzMC42OWMtMC41NzYsMC0xLjE1Mi0wLjIyLTEuNTkxLTAuNjU5Yy0wLjg3OS0wLjg3OC0wLjg3OS0yLjMwMywwLTMuMTgybDkuNTM5LTkuNTM5IGMwLjg3OC0wLjg3OSwyLjMwNC0wLjg3OSwzLjE4MiwwYzAuODc5LDAuODc4LDAuODc5LDIuMzAzLDAsMy4xODJsLTkuNTM5LDkuNTM5QzIzLjY0MywzMC40NywyMy4wNjcsMzAuNjksMjIuNDkxLDMwLjY5eiI+PC9wYXRoPgo8L3N2Zz4=" /></span
+              >Track workout time and weightlifting
+            </li>
+            <li>
+              <span
+                ><img
+                  alt="svgImg"
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxjaXJjbGUgY3g9IjI0IiBjeT0iMjQiIHI9IjIwIiBmaWxsPSIjNGRkMGUxIj48L2NpcmNsZT48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjIuNDkxLDMwLjY5Yy0wLjU3NiwwLTEuMTUyLTAuMjItMS41OTEtMC42NTlsLTYuMDgzLTYuMDg0Yy0wLjg3OS0wLjg3OC0wLjg3OS0yLjMwMywwLTMuMTgyIGMwLjg3OC0wLjg3OSwyLjMwNC0wLjg3OSwzLjE4MiwwbDYuMDgzLDYuMDg0YzAuODc5LDAuODc4LDAuODc5LDIuMzAzLDAsMy4xODJDMjMuNjQzLDMwLjQ3LDIzLjA2NywzMC42OSwyMi40OTEsMzAuNjl6Ij48L3BhdGg+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIyLjQ5MSwzMC42OWMtMC41NzYsMC0xLjE1Mi0wLjIyLTEuNTkxLTAuNjU5Yy0wLjg3OS0wLjg3OC0wLjg3OS0yLjMwMywwLTMuMTgybDkuNTM5LTkuNTM5IGMwLjg3OC0wLjg3OSwyLjMwNC0wLjg3OSwzLjE4MiwwYzAuODc5LDAuODc4LDAuODc5LDIuMzAzLDAsMy4xODJsLTkuNTM5LDkuNTM5QzIzLjY0MywzMC40NywyMy4wNjcsMzAuNjksMjIuNDkxLDMwLjY5eiI+PC9wYXRoPgo8L3N2Zz4="
+              /></span>
+              Set target muscles and body measurements
+            </li>
+            <li>
+              <span
+                ><img
+                  alt="svgImg"
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxjaXJjbGUgY3g9IjI0IiBjeT0iMjQiIHI9IjIwIiBmaWxsPSIjNGRkMGUxIj48L2NpcmNsZT48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjIuNDkxLDMwLjY5Yy0wLjU3NiwwLTEuMTUyLTAuMjItMS41OTEtMC42NTlsLTYuMDgzLTYuMDg0Yy0wLjg3OS0wLjg3OC0wLjg3OS0yLjMwMywwLTMuMTgyIGMwLjg3OC0wLjg3OSwyLjMwNC0wLjg3OSwzLjE4MiwwbDYuMDgzLDYuMDg0YzAuODc5LDAuODc4LDAuODc5LDIuMzAzLDAsMy4xODJDMjMuNjQzLDMwLjQ3LDIzLjA2NywzMC42OSwyMi40OTEsMzAuNjl6Ij48L3BhdGg+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIyLjQ5MSwzMC42OWMtMC41NzYsMC0xLjE1Mi0wLjIyLTEuNTkxLTAuNjU5Yy0wLjg3OS0wLjg3OC0wLjg3OS0yLjMwMywwLTMuMTgybDkuNTM5LTkuNTM5IGMwLjg3OC0wLjg3OSwyLjMwNC0wLjg3OSwzLjE4MiwwYzAuODc5LDAuODc4LDAuODc5LDIuMzAzLDAsMy4xODJsLTkuNTM5LDkuNTM5QzIzLjY0MywzMC40NywyMy4wNjcsMzAuNjksMjIuNDkxLDMwLjY5eiI+PC9wYXRoPgo8L3N2Zz4="
+              /></span>
+              Understand muscle recovery rate
+            </li>
+            <li>
+              <span
+                ><img
+                  alt="svgImg"
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxjaXJjbGUgY3g9IjI0IiBjeT0iMjQiIHI9IjIwIiBmaWxsPSIjNGRkMGUxIj48L2NpcmNsZT48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjIuNDkxLDMwLjY5Yy0wLjU3NiwwLTEuMTUyLTAuMjItMS41OTEtMC42NTlsLTYuMDgzLTYuMDg0Yy0wLjg3OS0wLjg3OC0wLjg3OS0yLjMwMywwLTMuMTgyIGMwLjg3OC0wLjg3OSwyLjMwNC0wLjg3OSwzLjE4MiwwbDYuMDgzLDYuMDg0YzAuODc5LDAuODc4LDAuODc5LDIuMzAzLDAsMy4xODJDMjMuNjQzLDMwLjQ3LDIzLjA2NywzMC42OSwyMi40OTEsMzAuNjl6Ij48L3BhdGg+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIyLjQ5MSwzMC42OWMtMC41NzYsMC0xLjE1Mi0wLjIyLTEuNTkxLTAuNjU5Yy0wLjg3OS0wLjg3OC0wLjg3OS0yLjMwMywwLTMuMTgybDkuNTM5LTkuNTM5IGMwLjg3OC0wLjg3OSwyLjMwNC0wLjg3OSwzLjE4MiwwYzAuODc5LDAuODc4LDAuODc5LDIuMzAzLDAsMy4xODJsLTkuNTM5LDkuNTM5QzIzLjY0MywzMC40NywyMy4wNjcsMzAuNjksMjIuNDkxLDMwLjY5eiI+PC9wYXRoPgo8L3N2Zz4=" /></span
+              >Set 1RM goals and refresh records
+            </li>
+          </ul>
+        </div>
+        <div><button class="sigupall">JOIN NOW</button></div>
+      </div>
+    </div>
+
+    <!-- buy plan -->
+    <div id="parent3">
+      <div><h1  >PLANS THAT SUIT YOU BEST</h1></div>
+
+      <div id="plans">
+        <div id="sub1">
+          <div>
+            <div><img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KPHBhdGggZmlsbD0iIzQ5QTBBRSIgZD0iTTcuOSwyNTZDNy45LDExOSwxMTksNy45LDI1Niw3LjlDMzkzLDcuOSw1MDQuMSwxMTksNTA0LjEsMjU2YzAsMTM3LTExMS4xLDI0OC4xLTI0OC4xLDI0OC4xQzExOSw1MDQuMSw3LjksMzkzLDcuOSwyNTZ6Ij48L3BhdGg+PHBhdGggZmlsbD0iIzQ5QTBBRSIgZD0iTTExMC42LDE0MS4xaDI4OC45YzIzLjMsMCw0Mi4zLDE4LjksNDIuMyw0Mi4zdjIzN2MzOC43LTQzLjgsNjIuMy0xMDEuMyw2Mi4zLTE2NC4zQzUwNC4xLDExOSwzOTMsNy45LDI1Niw3LjlDMTE5LDcuOSw3LjksMTE5LDcuOSwyNTZjMCw2MiwyMi44LDExOC43LDYwLjQsMTYyLjJWMTgzLjRDNjguNCwxNjAsODcuMywxNDEuMSwxMTAuNiwxNDEuMXoiPjwvcGF0aD48cGF0aCBmaWxsPSIjRThFOEU4IiBkPSJNMjU2LDUwNC4xYzc0LDAsMTQwLjMtMzIuNCwxODUuOC04My44di0yMzdjMC0yMy4zLTE4LjktNDIuMy00Mi4zLTQyLjNIMTEwLjZjLTIzLjMsMC00Mi4zLDE4LjktNDIuMyw0Mi4zdjIzNC44QzExMy44LDQ3MC44LDE4MSw1MDQuMSwyNTYsNTA0LjF6Ij48L3BhdGg+PHBhdGggZmlsbD0iI0M2QzVDNSIgZD0iTTQwMC4yIDMyMy45YzAgNC40LTMuNiA4LTggOEgxMTUuNmMtNC40IDAtOC0zLjYtNy45LThsMCAwYzAtNC40IDMuNS03LjkgNy45LTcuOWwyNzYuNyAwQzM5Ni43IDMxNS45IDQwMC4yIDMxOS41IDQwMC4yIDMyMy45TDQwMC4yIDMyMy45ek0yNTYuNCAyNzguN2wtMTQwLjggMGMtNC40IDAtNy45IDMuNS03LjkgNy45IDAgNC40IDMuNSA4IDcuOSA4aDE0MC44YzQuNCAwIDgtMy42IDgtOEMyNjQuMyAyODIuMyAyNjAuOCAyNzguNyAyNTYuNCAyNzguN3oiPjwvcGF0aD48Zz48cGF0aCBmaWxsPSIjQkMyQzJBIiBkPSJNNDUxLjkgMzUzLjFMMjI5LjcgMTMwLjYgMjI5LjUgMTMwLjcgMjEwLjggMTQxIDIzMi43IDE0MSA0NDEuMSAzNDkuOCA0NDEuMSAzNzEuNnoiPjwvcGF0aD48cGF0aCBmaWxsPSIjQ0MzNDMyIiBkPSJNMzQ1LjMgMTMwLjZMMjI5LjcgMTMwLjYgNDUxLjkgMzUzLjEgNDUxLjkgMjM3LjZ6Ij48L3BhdGg+PC9nPjxnPjxwYXRoIGZpbGw9IiNEREEwMjciIGQ9Ik0zOTIuNywyMjQuM2wtMTEuMS0xNC44bDUuOS0xNy41YzAuMy0wLjcsMC4xLTEuNS0wLjUtMi4xYy0wLjUtMC41LTEuNC0wLjctMi4xLTAuNWwtMTcuNSw1LjlsLTE0LjgtMTEuMWMtMC42LTAuNS0xLjUtMC41LTIuMS0wLjJjLTAuNywwLjQtMS4xLDEuMS0xLjEsMS44bDAuMiwxOC41bC0xNS4xLDEwLjdjLTAuNiwwLjUtMSwxLjItMC44LDJjMC4xLDAuOCwwLjcsMS40LDEuNCwxLjZsMTcuNyw1LjVsNS41LDE3LjdjMC4yLDAuNywwLjksMS4zLDEuNiwxLjRjMC4xLDAsMC4yLDAsMC4zLDBjMC43LDAsMS4zLTAuMywxLjctMC45bDEwLjctMTUuMWwxOC41LDAuMmMwLjctMC4xLDEuNS0wLjQsMS44LTEuMUMzOTMuMiwyMjUuNywzOTMuMSwyMjQuOSwzOTIuNywyMjQuM3oiPjwvcGF0aD48L2c+Cjwvc3ZnPg=="/></div>
+            <div><h1 class="wh">FREE</h1></div>
+            <div>
+              <ul class="wh">
+                <li>Basic</li>
+                <li>Ads supported
+                </li>
+                <li>Flexible workout planner</li>
+                <li>Top-notch log tracker
+                </li>
+                <li>1400+ exercises library
+                </li>
+                <li>Body stats tracking</li>
+                <li>tools</li>
+                <li>Support interval training</li>
+              </ul>
+            </div>
+            <div><button  class="more">DOWNLOAD NOW</button></div>
+          </div>
+        </div>
+        <div id="sub2">
+          <div><img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCI+CjxwYXRoIGZpbGw9IiNjZWQ4ZWQiIGQ9Ik00NywxMUgxN0M5LjI2OCwxMSwzLDE3LjI2OCwzLDI1djIyaDU4VjI1QzYxLDE3LjI2OCw1NC43MzIsMTEsNDcsMTF6Ij48L3BhdGg+PHBhdGggZmlsbD0iI2MyY2RlNyIgZD0iTTE3LjM4LDExTDE3LjM4LDExQzI0LjkwMiwxMSwzMSwxNy4wOTgsMzEsMjQuNjJjMCwwLDAsMCwwLDBWNDdsMCwwSDNsMCwwVjI1LjM4IEMzLDE3LjQzOCw5LjQzOCwxMSwxNy4zOCwxMXoiPjwvcGF0aD48cGF0aCBmaWxsPSIjYzQ5MzljIiBkPSJNMjkgNTNIMzdWNjRIMjl6Ij48L3BhdGg+PHBhdGggZmlsbD0iI2MyY2RlNyIgZD0iTTM1LDQyaDIyYzIuMjA5LDAsNCwxLjc5MSw0LDR2MWwwLDBIMzFsMCwwdi0xQzMxLDQzLjc5MSwzMi43OTEsNDIsMzUsNDJ6Ij48L3BhdGg+PHBhdGggZmlsbD0iI2Y5ZGQ4ZiIgZD0iTTYxLDQ3SDNjLTEuMTA1LDAtMiwwLjg5NS0yLDJsMCwwYzAsMS4xMDUsMC44OTUsMiwyLDJoNThjMS4xMDUsMCwyLTAuODk1LDItMmwwLDAgQzYzLDQ3Ljg5NSw2Mi4xMDUsNDcsNjEsNDd6Ij48L3BhdGg+PHBhdGggZmlsbD0iI2NkYTFhNyIgZD0iTTM5Ljc2LDU1SDI2LjI0Yy0wLjc1OSwwLTEuNDUyLTAuNDMtMS43OS0xLjExTDIzLDUxaDIwbC0xLjQ1LDIuODlDNDEuMjEyLDU0LjU3LDQwLjUxOSw1NSwzOS43Niw1NSB6Ij48L3BhdGg+PHBhdGggZmlsbD0iI2VkNzg5OSIgZD0iTTYyLDM1YzAuNTUyLDAsMS0wLjQ0OCwxLTF2LThjMC0wLjU1Mi0wLjQ0OC0xLTEtMUg0MGMtMS4xMDUsMC0yLDAuODk1LTIsMmwwLDBjMCwxLjEwNSwwLjg5NSwyLDIsMiBoMTdjMC40ODMtMC4wMSwwLjkwNCwwLjMyNywxLDAuOGwwLjg4LDQuMzljMC4wOTYsMC40NzMsMC41MTcsMC44MSwxLDAuOEw2MiwzNXoiPjwvcGF0aD48cGF0aCBmaWxsPSIjZjlkZDhmIiBkPSJNMzguOTk5IDI0LjAwNUEzIDMgMCAxIDAgMzguOTk5IDMwLjAwNUEzIDMgMCAxIDAgMzguOTk5IDI0LjAwNVoiIHRyYW5zZm9ybT0icm90YXRlKC00NS4wMDEgMzguOTk5IDI3LjAwNSkiPjwvcGF0aD48cGF0aCBmaWxsPSIjOGQ2YzlmIiBkPSJNNTEgNDBjLS41NTIgMC0xIC40NDgtMSAxdjJjMCAuNTUyLjQ0OCAxIDEgMXMxLS40NDggMS0xdi0yQzUyIDQwLjQ0OCA1MS41NTIgNDAgNTEgNDB6TTQ2IDQwYy0uNTUyIDAtMSAuNDQ4LTEgMXYyYzAgLjU1Mi40NDggMSAxIDFzMS0uNDQ4IDEtMXYtMkM0NyA0MC40NDggNDYuNTUyIDQwIDQ2IDQwek01NiA0MGMtLjU1MiAwLTEgLjQ0OC0xIDF2MmMwIC41NTIuNDQ4IDEgMSAxczEtLjQ0OCAxLTF2LTJDNTcgNDAuNDQ4IDU2LjU1MiA0MCA1NiA0MHpNNDEgNDBjLS41NTIgMC0xIC40NDgtMSAxdjJjMCAuNTUyLjQ0OCAxIDEgMXMxLS40NDggMS0xdi0yQzQyIDQwLjQ0OCA0MS41NTIgNDAgNDEgNDB6TTM2IDQwYy0uNTUyIDAtMSAuNDQ4LTEgMXYyYzAgLjU1Mi40NDggMSAxIDFzMS0uNDQ4IDEtMXYtMkMzNyA0MC40NDggMzYuNTUyIDQwIDM2IDQwek0yMSAyNGgtOGMtLjU1MiAwLTEgLjQ0OC0xIDFzLjQ0OCAxIDEgMWg4Yy41NTIgMCAxLS40NDggMS0xUzIxLjU1MiAyNCAyMSAyNHoiPjwvcGF0aD48cGF0aCBmaWxsPSIjOGQ2YzlmIiBkPSJNNjQsMzR2LThjMC0xLjEwNS0wLjg5NS0yLTItMmwwLDBjLTAuNTI3LTcuODkxLTcuMDkxLTE0LjAxOC0xNS0xNEgxN0M4LjcxNiwxMCwyLDE2LjcxNiwyLDI1djIxLjE4IGMtMS41NTcsMC41NjUtMi4zNjIsMi4yODYtMS43OTcsMy44NDNDMC42MzEsNTEuMjAyLDEuNzQ2LDUxLjk5LDMsNTJoMTkuMzhsMS4xNywyLjM0YzAuNTA5LDEuMDE5LDEuNTUxLDEuNjYyLDIuNjksMS42NkgyOHY3IGMwLDAuNTUyLDAuNDQ4LDEsMSwxczEtMC40NDgsMS0xdi03aDZ2N2MwLDAuNTUyLDAuNDQ4LDEsMSwxczEtMC40NDgsMS0xdi03aDEuNzZjMS4xMzUtMC4wMDIsMi4xNzMtMC42NDQsMi42OC0xLjY2TDQzLjYyLDUySDYxIGMxLjY1Ny0wLjAxMywyLjk4OS0xLjM2NiwyLjk3Ny0zLjAyM2MtMC4wMS0xLjI1NC0wLjc5OC0yLjM2OS0xLjk3Ny0yLjc5N1YzNkM2My4xMDUsMzYsNjQsMzUuMTA1LDY0LDM0eiBNMzAsNDZINFYyNSBjMC03LjE4LDUuODItMTMsMTMtMTNzMTMsNS44MiwxMywxM1Y0NnogTTQwLjY2LDUzLjQ1Yy0wLjE2OSwwLjMzNi0wLjUxMywwLjU0OS0wLjg5LDAuNTVIMjYuMjQgYy0wLjM3Ny0wLjAwMS0wLjcyMS0wLjIxNC0wLjg5LTAuNTVMMjQuNjIsNTJoMTYuNzZMNDAuNjYsNTMuNDV6IE02MSw1MEgzYy0wLjU1MiwwLTEtMC40NDgtMS0xczAuNDQ4LTEsMS0xaDU4IGMwLjU1MiwwLDEsMC40NDgsMSwxUzYxLjU1Miw1MCw2MSw1MHogTTYwLDQ2SDMyVjI1Yy0wLjAwNy01LjM3My0yLjg4Ny0xMC4zMzItNy41NS0xM0g0N2M2LjgwNy0wLjAyLDEyLjQ3Niw1LjIxMywxMywxMkg0MS42NCBjLTAuNzI5LTAuNjQzLTEuNjY4LTAuOTk5LTIuNjQtMWMtMi4yMDksMC00LDEuNzkxLTQsNHMxLjc5MSw0LDQsNGMwLjk3Mi0wLjAwMSwxLjkxMS0wLjM1NywyLjY0LTFINTdsMC44OCw0LjM5IGMwLjE4OSwwLjk1LDEuMDMxLDEuNjI5LDIsMS42MUg2MFY0NnogTTQxLDI3YzAuMDA1LDAuMzUzLTAuMDkzLDAuNy0wLjI4LDFjLTAuMDgzLDAuMTUxLTAuMTg3LDAuMjg5LTAuMzEsMC40MSBjLTAuNzgsMC43NzUtMi4wNCwwLjc3NS0yLjgyLDBjLTAuMjE3LTAuMjI2LTAuMzc4LTAuNS0wLjQ3LTAuOGMtMC4wNDQtMC4wNjgtMC4wODQtMC4xMzgtMC4xMi0wLjIxIGMtMC4wNTMtMC4yNjEtMC4wNTMtMC41MjksMC0wLjc5YzAuMDItMC4wNjgsMC4wNDMtMC4xMzUsMC4wNy0wLjJjMC4wOTMtMC4zMDQsMC4yNTgtMC41ODIsMC40OC0wLjgxYzAuNzgtMC43NzUsMi4wNC0wLjc3NSwyLjgyLDAgYzAuMTIzLDAuMTIxLDAuMjI3LDAuMjU5LDAuMzEsMC40MUM0MC44OCwyNi4zMDIsNDAuOTkxLDI2LjY0Niw0MSwyN3ogTTYwLDM0aC0wLjE4bC0wLjg4LTQuMzljLTAuMTg0LTAuOTI4LTAuOTk0LTEuNi0xLjk0LTEuNjEgSDQyLjg3YzAuMTczLTAuNjU1LDAuMTczLTEuMzQ1LDAtMkg2MnY4SDYweiI+PC9wYXRoPgo8L3N2Zz4="/></div>
+          <div><h1 class="wh">
+            Elite<br>
+            Monthly </h1></div>
+          <div>
+            <ul class="wh">
+              <li>$12.99/month</li>
+              <li>ALL BASIC plan features </li>
+              <li>No ads</li>
+              <li>Comprehensive traning reports</li>
+              <li>Advance tracking features</li>
+              <li>compare records with friends</li>
+              <li>Exercise tips from JEFIT</li>
+              <li>Premium workout plans</li>
+              <li>More..</li>
+            </ul>
+          </div>
+          <div><button  class="more"  >LEARN MORE</button></div>
+        </div>
+        <div id="sub3">
+          <div><img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCI+Cjxwb2x5Z29uIGZpbGw9IiM3YmJlZWIiIHBvaW50cz0iNywxNSA0LDI0IDUsMzUgMTEsNDIgNDcsNDIgNjEsMjMgNDIsOCI+PC9wb2x5Z29uPjxwb2x5Z29uIGZpbGw9IiM4NWNiZjgiIHBvaW50cz0iMzksMTggNCwyNCA1LDM1IDQxLDMzIj48L3BvbHlnb24+PHBvbHlnb24gZmlsbD0iI2UzZjJmZiIgcG9pbnRzPSI0Miw4IDM5LDE4IDYxLDIzIj48L3BvbHlnb24+PHBvbHlnb24gZmlsbD0iI2FjZTNmZiIgcG9pbnRzPSIzOSwxOCA0MSwzMyA2MSwyMyI+PC9wb2x5Z29uPjxwb2x5Z29uIGZpbGw9IiM4NWNiZjgiIHBvaW50cz0iNDEsMzMgNDcsNDIgNjEsMjMiPjwvcG9seWdvbj48cG9seWdvbiBmaWxsPSIjYWNlM2ZmIiBwb2ludHM9IjM5LDE4IDQyLDggNywxNSA0LDI0Ij48L3BvbHlnb24+PHBhdGggZmlsbD0iIzhkNmM5ZiIgZD0iTTYxLjYyLDIyLjIxNWwtMTktMTVjLTAuMjMtMC4xODItMC41MjYtMC4yNTEtMC44MTYtMC4xOTVsLTM1LDcJYy0wLjM1MiwwLjA3LTAuNjM5LDAuMzI0LTAuNzUyLDAuNjY0bC0zLDljLTAuMDQ0LDAuMTMxLTAuMDYxLDAuMjctMC4wNDgsMC40MDdsMSwxMWMwLjAxOSwwLjIwNiwwLjEwMiwwLjQwMiwwLjIzNywwLjU2bDYsNwlDMTAuNDMxLDQyLjg3MiwxMC43MDgsNDMsMTEsNDNoM3Y4YzAsMi42NTQsMS4wMSw0LDMsNHYtMmMtMC40NjksMC0xLDAtMS0ydi04aDV2OGMwLDIuNjU0LDEuMDEsNCwzLDR2LTJjLTAuNDY5LDAtMSwwLTEtMnYtOGgxMXY4CWMwLDIuNjU0LDEuMDEsNCwzLDR2LTJjLTAuNDY5LDAtMSwwLTEtMnYtOGg1djhjMCwyLjY1NCwxLjAxLDQsMyw0di0yYy0wLjQ2OSwwLTEsMC0xLTJ2LThoNGMwLjMxNywwLDAuNjE2LTAuMTUxLDAuODA1LTAuNDA3CWwxNC0xOUM2Mi4xMjUsMjMuMTU5LDYyLjA0MywyMi41NSw2MS42MiwyMi4yMTV6IE00Mi41MzUsOS42OTdsMTQuMzc0LDExLjM0OGwtMTYuNjQzLTMuNzgzTDQyLjUzNSw5LjY5N3ogTTUuMDc5LDI0LjgyOQlsOC4wMzEtMS4zNzdjMC41NDQtMC4wOTMsMC45MS0wLjYxLDAuODE2LTEuMTU0Yy0wLjA5My0wLjU0NC0wLjYwNy0wLjkwNy0xLjE1NC0wLjgxNmwtNy4yOTYsMS4yNTFsMi4yODktNi44NjVsMzIuNzk4LTYuNTYJbC0yLjM0NCw3LjgxMkwyNC42LDE5LjQ1NGMtMC41NDQsMC4wOTMtMC45MSwwLjYxLTAuODE2LDEuMTU0YzAuMDkzLDAuNTQ0LDAuNjA0LDAuOTEzLDEuMTU0LDAuODE2bDEzLjIwOS0yLjI2NGwxLjcyLDEyLjkJTDUuOTA4LDMzLjk0OEw1LjA3OSwyNC44Mjl6IE0xMS40Niw0MWwtNC4zODQtNS4xMTRsMzMuNDA5LTEuODU2TDQ1LjEzMiw0MUgxMS40NnogTTQ3LjA0MSw0MC4yNTlsLTQuNTgtNi44NzFsMTUuMjY4LTcuNjM0CUw0Ny4wNDEsNDAuMjU5eiBNNDEuODA2LDMxLjQ3OWwtMS42MjUtMTIuMTg0bDE3Ljg3MSw0LjA2Mkw0MS44MDYsMzEuNDc5eiBNMTUuODk4LDIxLjk2Yy0wLjA5NC0wLjU0NCwwLjI3Mi0xLjA2MiwwLjgxNi0xLjE1NAlsMy45NDItMC42NzZjMC41NTMtMC4wOTQsMS4wNjMsMC4yNzIsMS4xNTQsMC44MTZjMC4wOTQsMC41NDQtMC4yNzIsMS4wNjItMC44MTYsMS4xNTRsLTMuOTQyLDAuNjc2CWMtMC4wNTgsMC4wMS0wLjExNCwwLjAxNS0wLjE3LDAuMDE1QzE2LjQwNCwyMi43OTEsMTUuOTgxLDIyLjQ0NywxNS44OTgsMjEuOTZ6Ij48L3BhdGg+Cjwvc3ZnPg=="/></div>
+            <div><h1 class="wh">
+              Elite<br>
+              Yearly
+              </h1></div>
+            <div><ul class="wh">
+              <li>$5.83/month</li>
+              <li>ALL BASIC plan features</li>
+              <li>No ads</li>
+              <li>Comprehensive traning reports</li>
+              <li>Advance tracking features</li>
+              <li>compare records with friends</li>
+              <li>Exercise tips from JEFIT</li>
+              <li>More...</li>
+            </ul></div>
+            <div><button   class="more">LEARN MORE</button></div>
+        </div>
+      </div>
+    </div>
+
+
+    
+   <!-- footer
+   -->
+   
+  <div id="footsub">
+    <div>
+      <div><h1>WANT TO BUILD YOUR OWN WORKOUT PLAN?</h1></div>
+  
+   <div><p>Customize your workout plan with over 1400 free exercises in Jefit Workout Plan Builder. And easily share with friends.</p></div>
+
+   <div><button class="sigupall">CREATE WORKOUT PLAN</button></div>
+    </div>
+  </div>
+   
+  <div id="footer">
+   
+    <div id="etc">
+      <div>
+       <div class="footbold">Products</div>
+       <div class="light">Elite Membership</div>
+        
+       <div class="light">Coach</div>
+       <div class="light">Coach</div>
+       <div class="light">Signup</div>
+       <div class="light">Login</div>
+       
+      </div>
+      <div>
+        <div class="footbold">Resource</div>
+        <div class="light">Workout Plans</div>
+        <div class="light">Exercises Database</div>
+        <div class="light">Community</div>
+        <div class="light">Help Center</div>
+      </div>
+      <div>
+        <div class="footbold">Legal Press</div>
+        <div class="light">Privacy Policy</div>
+        <div class="light">Terms of Use</div>
+        <div class="light">IP/DMCA Notices</div>
+         
+        <div class="light">Press & Media</div>
+      </div>
+      <div>
+        <div class="footbold">Follow Us</div>
+        <div class="light">Blog</div>
+        <div class="light">Facebook</div>
+        <div class="light">Twitter</div>
+        <div class="light">Instagram</div>
+      </div>
+    </div>
+ 
+    <div id="copyright">
+      <div>
+        <div>Copyright © 2010 - 2023 Jefit, Inc.</div>
+        <div>All Rights Reserved.</div>
+      </div>
+    </div>
+
+  </div>
+
+  </body>
+</html>
+
+<script src="./main.js"></script>

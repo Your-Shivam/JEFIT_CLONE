@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+              font-family: Poppins, DM-Sans, sans-serif;;
+        }
+        body{
+            background-color:rgb(219,232,244);
+        }
+  #main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    height: auto;
+    padding: 4% 8%;
+    margin: auto;
+     
+  }
+
+  #left{
+   width: 100%;
+  }
+  #comlog{
+    color: aliceblue;
+    font-size: 60px;
+  }
+   #download{
+   display: flex;
+   gap: 30px;
+   margin-top:6%;
+}
+   #play{
+     display: grid;
+}
+#col{
+    color: rgb(51,181,229);
+}
+.col1{
+    color:rgb(85,85,85);
+    font-size:xx-large;
+}
+#big{
+    font-size: 90px;
+}
+
+#right{
+    width: 100%;
+    padding: 4% 8%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#in{
+    color: #2b83c8;
+}
+
+#logup{
+         text-align: center;
+         /* border: 1px solid blue; */
+         height:auto;
+         width:80%;
+         margin:auto;
+         border-radius: 15px;
+         background-color: rgb(235, 247, 255);
+         padding: 10px 15px;
+        }
+     #logup>div>h1{
+        font-size:60px;
+        font-family: Montserrat, sans-serif;;
+     }   
+    .mont{
+        color: rgb(85,85,101);
+        font-size: x-large;
+    }
+    .nm{
+       font-size: 22px;
+       display: flex;
+        justify-content: flex-start;
+        margin-left:8%;
+        line-height: 50px;
+        color: rgb(85,85,101);
+     }
+     .inp{
+      padding: 2%;
+      border-radius: 8px;
+      width: 80%;
+      border: none;
+    margin-bottom: 10px;
+    }
+    #btn{
+      padding: 2.1%;
+      border-radius: 40px;
+      width: 85%;
+      margin-top: 20px;
+      background-color: #2b83c8;
+      color: white;
+      font-weight: 900;
+      font-size: large;
+      border: none;
+     }
+     
+#otlog{
+        display: flex;
+        justify-content:space-around;
+       }
+       #otlog>div{
+        height: 70px;
+        width: 70px;
+        /* border: 1px solid blue; */
+       }
+       #otlog>div>img{
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+       }
+       #lst{
+        color:rgb(138,138,161);
+        font-size: larger;
+       }
+
+       .term{
+        color:rgb(47,157,216);
+        text-decoration: none;
+       }
+      
+
+
+       @media (min-width: 768px) {  
+    #main {
+        justify-content: space-between;
+    }
+
+    #left, #right {
+        width: 48%;  
+    }
+}
+
+@media (min-width: 1024px) {  
+    #left, #right {
+        width: 45%;  
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <div id="main">
+        <div id="left">
+            <div><h1 id="comlog">JEFIT</h1></div>
+            <div><h2 class="col1">Get the full <span id="col">Jefit Elite</span> experience for</h2></div>
+            <div><h1 id="big">$0 today</h1></div>
+            <div><p class="col1">$5.83 USD per month, billed annually at $69.99/year after<br>your 7-day free trial.<br>Cancel anytime </p></div>
+            <div id="download">
+                <div id="play">
+                  <div>
+                    <img
+                      src="https://www.jefit.com/wp/wp-content/uploads/2021/11/googleplay.png"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://www.jefit.com/wp/wp-content/uploads/2021/11/appstore.png"
+                    />
+                  </div>
+                </div>
+    
+                <div>
+                  <img
+                    src="https://www.jefit.com/wp/wp-content/uploads/2021/11/qrcode_white.png"
+                  />
+                </div>
+              </div>
+        </div>
+        <div id="right">
+           <div id="logup">
+            <div>
+                <h1 >Create Account </h1>
+                <p class="mont"> Already a member ? <span><a id="in" href="signIn.html">Sign in</a></span></p>
+             </div>
+        
+             <div>  
+                <label class="nm"class="mont">Username</label><br>
+                <input id="usname" class="inp" class="mont"  type="name" placeholder="Enter a username"><br>
+                <label class="nm"class="mont">Email Address</label><br>
+                <input id="email" class="inp" class="mont" type="email" placeholder="Enter your email"><br>
+                <label class="nm" class="mont">Password</label><br>
+                <input id="pass" class="inp" class="mont" type="password" placeholder="Password"><br>
+                <input id="pass1" class="inp" class="mont" placeholder="Confirm password">
+             </div>
+             
+             <div><button id="btn" onclick="signUp()">Create Account</button></div>
+        
+             <div>
+                <p class="mont">Or continue with</p>
+                <div id="otlog">
+                 <div><img src="https://www.jefit.com/images/rg_google.svg" alt="google"></div>
+                 <div><img src="https://www.jefit.com/images/rg_fb.svg" alt="facebook"></div>
+                 <div><img src="https://www.jefit.com/images/rg_apple.svg" alt="apple"></div>
+                </div>
+                <p  id="lst">By signing up, you agree to the JEFIT <span><a class="term" href="#">Terms of Use</a></span> and <span><a class="term" href="#">Privacy <br>Policy</a></span>
+                .We respect and protect your information and privacy.
+                </p>
+             </div>
+           </div>
+        </div>   
+    </div>
+
+   
+</body>
+</html>
+<script src="./signUp.js"></script>
